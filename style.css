@@ -1,13 +1,33 @@
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: white;
-  color: black;
-  text-align: center;
-  margin-top: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
 }
 
-/* Dark mode style */
+
 .dark-mode {
-  background-color: black;
-  color: white;
+    background-color: #121212;
+    color: white;
+}
+
+
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.image-container img {
+    width: 300px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
 }
