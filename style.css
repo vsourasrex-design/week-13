@@ -31,3 +31,12 @@ button {
 .image-container img:hover {
     transform: scale(1.05);
 }
+.gallery {
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+}
