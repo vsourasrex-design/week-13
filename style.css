@@ -7,6 +7,7 @@ body {
   background-attachment: fixed;
   color: #e8f5e9;
 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,19 +28,42 @@ body {
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 25px rgba(0,0,0,0.7);
+  text-align: center;
 
-  text-align: center;
+  backdrop-filter: blur(8px);
 }
+
 h1, h2 {
-  text-align: center;
   color: #a5d6a7;
   letter-spacing: 2px;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.jungle-img {
+  width: 45%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.jungle-img:hover {
+  transform: scale(1.05);
+}
+
+/* BUTTONS */
 a, button {
   background: #2e7d32;
   color: white;
@@ -68,6 +92,7 @@ a:hover, button:hover {
   display: inline-block;
   animation: sway 3s infinite ease-in-out;
 }
+
 
 #jungleCanvas {
   position: fixed;
