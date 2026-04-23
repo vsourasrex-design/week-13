@@ -21,14 +21,15 @@ body {
 }
 
 .container {
-  max-width: 1000px;
-  margin: auto;
+  width: 90%;
+  max-width: 900px;
   background: rgba(20, 60, 30, 0.85);
-  padding: 30px;
+  padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.7);
-}
+  box-shadow: 0 0 25px rgba(0,0,0,0.7);
 
+  text-align: center;
+}
 h1, h2 {
   text-align: center;
   color: #a5d6a7;
