@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Webpage</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Jungle Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1 class="leaf">🌿 Welcome to the Jungle 🌿</h1>
-
-    
-    <button id="greetBtn">Click for Greeting</button>
-
-    
-    <button id="darkModeBtn">Toggle Dark Mode</button>
-
-    <div class="image-container">
-        <h2>Hover Image Effect</h2>
-        <img id="hoverImage" src="assets/image1.jpg" alt="Main Image">
-        <p>Hover over the image to see it change!</p>
-    </div>
-
-    
-    <div class="gallery">
-        <h2>Image Gallery</h2>
-        <img src="assets/image1.jpg" alt="Image 1">
-        <img src="assets/image2.jpg" alt="Image 2">
-    </div>
 <canvas id="jungleCanvas"></canvas>
-    
-    <script src="script.js"></script>
+
+<div class="overlay">
+  <div class="container">
+
+    <h1 class="leaf">🌿 Welcome to the Jungle 🌿</h1>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        This is my jungle-themed website for Week 13. It represents nature,
+        exploration, and creativity using HTML, CSS, and JavaScript.
+      </p>
+    </section>
+
+    <section>
+      <h2>Explore</h2>
+      <p>
+        Discover hidden paths, glowing lights, and the mystery of the monkee.
+      </p>
+      <button onclick="showMessage()">Enter the Jungle</button>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Want to explore more? Reach out!</p>
+      <a href="#">Send Message</a>
+    </section>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
