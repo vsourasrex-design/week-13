@@ -1,36 +1,51 @@
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    color: #333;
-
-    transition: 0.3s;
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  background: linear-gradient(rgba(10, 40, 20, 0.8), rgba(10, 40, 20, 0.9)),
+              url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #e8f5e9;
 }
 
 
-h1 {
-    margin-top: 20px;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  padding: 40px;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(20, 60, 30, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
 }
 
-
-button {
-    margin: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 6px;
-    background-color: #ffffff;
-    cursor: pointer;
-    transition: 0.3s;
+h1, h2 {
+  text-align: center;
+  color: #a5d6a7;
+  letter-spacing: 2px;
 }
 
-button:hover {
-    background-color: #ddd;
+section {
+  margin-bottom: 40px;
+}
+a, button {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
+a:hover, button:hover {
+  background: #66bb6a;
+  transform: scale(1.05);
+}
 
 .dark-mode {
     background: #121212;
@@ -89,4 +104,13 @@ button:hover {
 .dark-mode button:hover {
     background-color: #555;
 }
+@keyframes sway {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+  100% { transform: rotate(0deg); }
+}
 
+.leaf {
+  display: inline-block;
+  animation: sway 3s infinite ease-in-out;
+}
